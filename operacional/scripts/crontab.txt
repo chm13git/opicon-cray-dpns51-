@@ -1,0 +1,20 @@
+# Rodada 00Z
+41 02 * * * /home/opicon/operacional/scripts/01_killall_iconlam.sh all > /home/opicon/operacional/scripts/logs/01_00Z.log 2>&1
+42 02 * * * /home/opicon/operacional/scripts/02_deloldfiles_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/02_00Z.log 2>&1
+43 02 * * * /home/opicon/operacional/scripts/03_currdata_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/03_00Z.log 2>&1
+44 02 * * * /usr/bin/env DEBUG=1 /home/opicon/operacional/scripts/04_preproc_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/04_00Z.log 2>&1
+45 02 * * * /usr/bin/env DEBUG=1 /home/opicon/operacional/scripts/05_run_iconlam.sh 00 >/dev/null 2>&1
+
+# Rodada 12Z
+#41 14 * * * /home/opicon/operacional/scripts/01_killall_iconlam.sh all > /home/opicon/operacional/scripts/logs/01_12Z.log 2>&1
+#42 14 * * * /home/opicon/operacional/scripts/02_deloldfiles_iconlam.sh 12 > /home/opicon/operacional/scripts/logs/02_12Z.log 2>&1
+#43 14 * * * /home/opicon/operacional/scripts/03_currdata_iconlam.sh 12 > /home/opicon/operacional/scripts/logs/03_12Z.log 2>&1
+#44 14 * * * /usr/bin/env DEBUG=1 /home/opicon/operacional/scripts/04_preproc_iconlam.sh 12 > /home/opicon/operacional/scripts/logs/04_12Z.log 2>&1
+#45 14 * * * /usr/bin/env DEBUG=1 /home/opicon/operacional/scripts/05_run_iconlam.sh 12 > /dev/null 2>&1
+
+# OAM
+#53 12 27 * * /home/opicon/operacional/scripts/01_killall_iconlam.sh all > /home/opicon/operacional/scripts/logs/01_00Z.log 2>&1
+#54 12 27 * * /home/opicon/operacional/scripts/02_deloldfiles_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/02_00Z.log 2>&1
+#55 12 27 * * /home/opicon/operacional/scripts/03_currdata_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/03_00Z.log 2>&1
+#52 11 29 * * /home/opicon/operacional/scripts/04_preproc_iconlam.sh 00 > /home/opicon/operacional/scripts/logs/04_00Z.log 2>&1
+#53 18 27 * * /home/opicon/operacional/scripts/05_run_iconlam.sh 12 > /home/opicon/operacional/scripts/logs/05_12Z.log 2>&1
